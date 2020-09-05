@@ -1,0 +1,52 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>
+        uPortfolio
+    </title>
+</head>
+<body>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<div class="grid-container">
+    <div class="A" id="A"></div> 
+    <div class="B">
+        <center> <h2>uPortfolio  </h2> </center>
+
+        <hr>
+        <center>
+            <form id="addForm">
+                <label for="asset"> Name of the Asset </label> <br>
+                <input type="text" id="nameInput"> <br>
+                <label for="asset"> Type of the Asset </label> <br>
+                <input type="text" id="typeInput"> <br>
+                <label for="quantity"> Quantity </label> <br>
+                <input type="text" id="quantityInput"> <br>
+                <label for="price"> Price of the Asset </label> <br>
+                <input type="text" id="priceInput"> <br>
+            </form>
+            <input type="submit" onclick="onAdd()" value="Add"> </input>
+            <input type="submit" onclick="onUpdate()" value="Update"> </input>
+            <input type="submit" onclick="onRemove()" value="Remove"> </input>
+        </center>
+
+        <hr>
+
+        <center>
+            <textarea id="jsonINPUT" type="text" rows="4" cols="50"></textarea>
+            <input type="submit" onclick="onSave()" value="Save"> </input>
+            <input type="submit" onclick="onLoad()" value="Load"> </input>
+        </center>
+         
+        <br>
+        
+    </div>
+    <div class="C" id="C"> </div>
+</div>
+
+<script src="script.js"> </script>
+
+</body>
+</html>

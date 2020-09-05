@@ -1,0 +1,50 @@
+/* I generated this template with the help of https://grid.layoutit.com/ */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 100%;
+    gap: 1px 1px;
+    grid-template-areas: "A B C";
+    border: 1px solid;
+  }
+  
+  .A { grid-area: A; 
+    border: 1px solid;}
+  
+  .B { grid-area: B;
+    border: 1px solid; 
+    }
+  
+  .C { grid-area: C; 
+    border: 1px solid;}
+
+
+input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+    
+input[type=submit] {
+    width: 23%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 2px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+  resize: none;
+}
